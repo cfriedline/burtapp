@@ -34,10 +34,7 @@ server {
     location / {
         uwsgi_pass  django;
         include     /home/cfriedline/web/pineapp/uwsgi_params; # the uwsgi_params file you installed
-    }
-
-    location /admin {
-        # force admin to use https
-        return 301 https://$server_name$request_uri;
+        uwsgi_param             HTTP_X_FORWARDED_PROTOCOL https;
+        uwsgi_param             UWSGI_SCHEME   $scheme;
     }
 }
