@@ -13,3 +13,6 @@ static:
 
 touch:
 	touch $(WSGI)
+
+nginx:
+	sudo cp django.nginx /etc/nginx/sites-available/django

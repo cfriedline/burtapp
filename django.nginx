@@ -36,4 +36,10 @@ server {
         uwsgi_pass  django;
         include     /home/cfriedline/web/pineapp/uwsgi_params; # the uwsgi_params file you installed
     }
+
+    location /admin {
+        # force admin to use https
+        rewrite (.*) https://pineapp.friedline.net/$1 permanent;
+    }
+...
 }
