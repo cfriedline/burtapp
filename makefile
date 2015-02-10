@@ -12,4 +12,4 @@ static:
 	$D collectstatic
 
 touch:
-	touch $WSGI
+	touch $(WSGI)
