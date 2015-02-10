@@ -41,5 +41,4 @@ server {
         # force admin to use https
         rewrite (.*) https://pineapp.friedline.net/$1 permanent;
     }
-...
 }
