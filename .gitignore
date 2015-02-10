@@ -3,3 +3,4 @@
 settings.py
 *.ipynb
 static
+*.rdata
