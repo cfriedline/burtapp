@@ -15,7 +15,6 @@ dependencies:
 - pastedeploy=1.5.2=py27_1
 - patsy=0.3.0=np19py27_0
 - pip=6.0.6=py27_0
-- psycopg2=2.4.6=py27_0
 - python=2.7.9=1
 - pytz=2014.9=py27_0
 - pyzmq=14.5.0=py27_0
@@ -26,7 +25,6 @@ dependencies:
 - sqlite=3.8.4.1=0
 - ssl_match_hostname=3.4.0.2=py27_0
 - statsmodels=0.6.1=np19py27_0
-- system=5.8=1
 - tk=8.5.15=0
 - tornado=4.0.2=py27_0
 - zeromq=4.0.4=0
@@ -34,7 +32,9 @@ dependencies:
 - pip:
   - backports.ssl-match-hostname==3.4.0.2
   - django-extensions==1.5.0
-  - django-grappelli==2.6.4
+  - django-grappelli==2.6.3
   - django-sslify-admin==0.5.0
   - python-dateutil==1.5
   - uwsgi==2.0.9
+  - psycopg2==2.6
+  - django-bootstrap3==5.1.1
