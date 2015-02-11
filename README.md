@@ -1,1 +1,1 @@
-# BURTApp
+# BURTapp
