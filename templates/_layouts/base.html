@@ -1,0 +1,6 @@
+<!DOCTYPE>
+<html>
+{% block content %}
+<p>Hello{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p>
+{% endblock content%}
+</html>
